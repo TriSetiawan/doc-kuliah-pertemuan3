@@ -1,0 +1,31 @@
+Latar Belakang
+Geospatial adalah aspek ruang yang menunjukkan lokasi, letak, dan posisi suatu objek atau kejadian yang terjadi di bawah bumi 
+atau diatas permukaan bumi yang dinyatakan dalam sistem koordinat tertentu. Pada data geospasial kita dapat melakukan manipulasi 
+data dan menghitung record yang ada pada shapefile berbentuk file.shp dan file.dbf menggunakan aplikasi python yang dapat membuat 
+class dan juga dapat memanggil file.shp
+
+Pembahasan:
+Retrieve Data Geospasial berfungsi sebagai cara untuk melakukan select/view mulai dari data record file.dbf dan dilanjutkan ke 
+file.shp untuk membaca geometri. Caranya adalah dengan meng-import file dan membaca file tersebut
+
+Membaca file.dbf:
+- sf.records()
+- sf.records(n)
+
+Membaca file.shp:
+-  sf = shapefile.Reader(“namafile.shp”)
+- sf.shapes()
+- a = sf.shapes()
+- len(a)
+
+Shape mempunyai 4 attribut, sebagai berikut:
+1.	BBOX merupakan koordinat 4 titik view yang ada pada peta.
+2.	Parts merupakan bagian-bagian penting pada shape.
+3.	Point merupakan titik suatu koordinat yang akan menampung (x,y)
+4.	ShapeType merupakan representasi dari jenis/data geometri dengan nomor 
+Yang sudah di tetapkan dan nantinya akan di presentasika
+
+Kesimpulan:
+Jadi retrieve data geospasial berfungsi sebagai cara untuk melakukan select/view  dari data record shapefile. Kita dapat 
+menggunakan aplikasi python untuk membaca file tersebut dengan cara meng-import file terlebih dahulu dan membaca file.
+
